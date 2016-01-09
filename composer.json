@@ -1,0 +1,28 @@
+{
+    "name": "vendor/package-name",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mauri de Souza Nunes",
+            "email": "mauri870@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "~5.1 || ~5.2",
+        "illuminate/http": "~5.1 || ~5.2",
+        "illuminate/support": "~5.1 || ~5.2",
+        "illuminate/database": "~5.1 || ~5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Package\\": "src/Vendor-name/Package/",
+            "Vendor\\Tests\\": "tests/"
+        }
+    }
+}
